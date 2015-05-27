@@ -1,0 +1,3 @@
+void* _malloc(size_t size)|malloc|_malloc.h|_malloc.c
+void _free(void *p)|malloc|_malloc.h|_malloc.c
+
