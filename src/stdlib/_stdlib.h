@@ -17,11 +17,11 @@
 int _atoi (const char *);
 long _atol (const char *);
 long long _atoll (const char *);
-double _atof (const char *);
+//double _atof (const char *); 실수 제공 안함
 
-float strtof (const char *__restrict, char **__restrict);
-double strtod (const char *__restrict, char **__restrict);
-long double strtold (const char *__restrict, char **__restrict);
+//float strtof (const char *__restrict, char **__restrict);
+//double strtod (const char *__restrict, char **__restrict);
+//long double strtold (const char *__restrict, char **__restrict);
 
 long strtol (const char *__restrict, char **__restrict, int);
 unsigned long strtoul (const char *__restrict, char **__restrict, int);
@@ -31,9 +31,9 @@ unsigned long long strtoull (const char *__restrict, char **__restrict, int);
 int rand (void);
 void srand (unsigned);
 
-void *malloc (size_t);
-void *calloc (size_t, size_t);
-void *realloc (void *, size_t);
+void *_malloc (size_t);
+//void *_calloc (size_t, size_t);
+//void *realloc (void *, size_t);
 void free (void *);
 void *aligned_alloc(size_t alignment, size_t size);
 
@@ -144,9 +144,9 @@ int clearenv(void);
 
 #ifdef _GNU_SOURCE
 int ptsname_r(int, char *, size_t);
-char *_ecvt(double, int, int *, int *);
-char *_fcvt(double, int, int *, int *);
-char *_gcvt(double, int, char *);
+//char *_ecvt(double, int, int *, int *); //지원안함 (실수)
+//char *_fcvt(double, int, int *, int *); //지원안함 (실수)
+//char *_gcvt(double, int, char *); //지원안함 (실수)
 struct __locale_struct;
 float strtof_l(const char *__restrict, char **__restrict, struct __locale_struct *);
 double strtod_l(const char *__restrict, char **__restrict, struct __locale_struct *);

@@ -9,6 +9,7 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include src/test/subdir.mk
+-include src/stdlib/subdir.mk
 -include src/malloc/subdir.mk
 -include src/subdir.mk
 -include subdir.mk
